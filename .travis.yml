@@ -11,7 +11,7 @@ jobs:
   include:
   - stage: install
     script:
-    - mvn clean install -B -V
+    - mvn --settings=.travis.settings.xml clean install -B -V
   - stage: deploy
     script:
     - echo "Deploy stage.."

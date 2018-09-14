@@ -1,0 +1,9 @@
+<settings>
+    <servers>
+        <server>
+            <id>ossrh</id>
+            <username>${env.CI_MAVEN_CENTRAL_USERNAME}</username>
+            <password>${env.CI_MAVEN_CENTRAL_PASSWORD}</password>
+        </server>
+    </servers>
+</settings>
