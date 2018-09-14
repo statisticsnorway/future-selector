@@ -1,0 +1,24 @@
+language: java
+notifications:
+  email: false
+jdk:
+- openjdk11
+stages:
+- install
+- name: deploy
+  if: branch = master
+jobs:
+  include:
+  - stage: install
+    script:
+    - mvn clean install -B -V
+  - stage: deploy
+    script:
+    - echo "Deploy stage.."
+branches:
+  only:
+  - master
+  - travis
+cache:
+  directories:
+  - "$HOME/.m2/repository"
