@@ -1,9 +1,23 @@
 <settings>
     <servers>
         <server>
+            <id>gpg</id>
+            <passphrase>${env.MAVEN_GPG_PLUGIN_KEY}</passphrase>
+        </server>
+        <server>
             <id>ossrh</id>
             <username>${env.CI_MAVEN_CENTRAL_USERNAME}</username>
             <password>${env.CI_MAVEN_CENTRAL_PASSWORD}</password>
         </server>
     </servers>
+    <profiles>
+        <profile>
+            <id>gpg</id>
+            <!--<properties>-->
+                <!--<gpg.executable>/usr/local/bin/gpg</gpg.executable>-->
+                <!--<gpg.keyname>F2E6E4907AD4ACD7C834E4764AEA35F9048A8CD2</gpg.keyname>-->
+                <!--&lt;!&ndash;<gpg.passphrase>$(env.GPG_PASSPHRASE}</gpg.passphrase>&ndash;&gt;-->
+            <!--</properties>-->
+        </profile>
+    </profiles>
 </settings>
