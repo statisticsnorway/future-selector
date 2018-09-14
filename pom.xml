@@ -38,7 +38,7 @@
 
     <scm>
         <connection>scm:git:git://github.com/statisticsnorway/future-selector.git</connection>
-        <developerConnection>scm:git:ssh@github.com:statisticsnorway/future-selector.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:statisticsnorway/future-selector.git</developerConnection>
         <url>https://github.com/statisticsnorway/future-selector/tree/master</url>
     </scm>
 
