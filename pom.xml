@@ -4,7 +4,7 @@
 
     <groupId>no.ssb.concurrent.futureselector</groupId>
     <artifactId>future-selector</artifactId>
-    <version>0.2</version>
+    <version>0.3-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Future Selector</name>
@@ -39,7 +39,7 @@
         <connection>scm:git:git://github.com/statisticsnorway/future-selector.git</connection>
         <developerConnection>scm:git:git@github.com:statisticsnorway/future-selector.git</developerConnection>
         <url>https://github.com/statisticsnorway/future-selector/tree/master</url>
-      <tag>v0.2</tag>
+      <tag>HEAD</tag>
   </scm>
 
 
